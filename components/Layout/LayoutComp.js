@@ -72,7 +72,7 @@ const LayoutComp = (props) => {
       <Head>
         <title>Pi Academy</title>
         <link rel="shortcut icon" type="image/jpg" href="/BRONCE18x18.png" />
-        <html lang="es"/>
+        {/* <html lang="es"/> */}
         <meta name="description" content="Pi Academy - Scholarship program Axie Infinity"/>
         <link
           rel="stylesheet"

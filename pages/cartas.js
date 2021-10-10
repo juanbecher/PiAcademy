@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import React from "react";
+import React, { useState } from "react";
 import LayoutComp from "../components/Layout/LayoutComp.js";
 import ListadoCartas from "../components/ListadoCartas";
 import { Input, Space } from 'antd';
@@ -15,13 +15,21 @@ const CartaLayout= styled.div`
 `;
 
 const cartas = (cartas_array) => {
+
   const cartas = cartas_array.cartas_array;
+  const [filtroTexto, setFiltroTexto] = useState()
+
+  const handleChange = (e) =>{
+    setFiltroTexto(e.target.value);
+  }
+  console.log(filtroTexto);
   return (
     <LayoutComp>
       <CartaLayout>
       <h1>PiAcademy card finder</h1>
       <h3>Filtros</h3>
-      <Search size="large" placeholder="Filter by text" style={{ width: 250}} />
+      <Search size="large" placeholder="Filter by text" style={{ width: 250}} onChange={handleChange}
+          />
       <div>{cartas && <ListadoCartas cartas={cartas} />}</div>
       </CartaLayout>
       
