@@ -1744,6 +1744,7 @@ const ListadoCartas = (cartas) => {
       );
     }
   };
+  console.log("listadooo");
 
   return (
     <Listado>

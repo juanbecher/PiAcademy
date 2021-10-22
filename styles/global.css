@@ -1,0 +1,32 @@
+.ant-menu-dark .ant-menu-item > span > a{
+    color:white ;
+}
+.ant-menu-dark .ant-menu-item-selected > span > a{
+    font-weight: bold;
+    color:#806636 !important;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+ .ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover{
+    background-color: #ffffffde !important;
+    font-weight: bold;
+    color:#806636 !important;
+}
+.ant-menu-dark .ant-menu-item > span > a:hover{
+    color:#806636 !important;
+}
+
+.ant-layout-header {
+    background-color: rgb(0 0 0 / 21%) !important;
+}
+
+.fondoHeader{
+    /* background-color: var(--morado) !important; */
+    background-color: #222222f0 !important;
+}
+.width1200{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
